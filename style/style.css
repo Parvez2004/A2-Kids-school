@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font family relative style */
+.quicksand-main-font{
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+.raleway-font{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* shared style */
+*{
+    background-color: #f7f7f7;
+}
+.sky-blue{
+    color: #01ACFD;
+}
+.orange{
+    color: #FEA301;
+}
+.black{
+    color: black;
+}
+.aqua{
+    color:#05D4DF;
+}
+.blue-violet{
+    color: #5D58EF;
+}
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    padding: 10px 47px;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 12px;
+}
+button:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    color: black;
+}
+/* header/navbar relative styles */
+#header{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+#header .navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.link-item{
+    list-style: none;
+}
+.link-item .links{
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin-right: 32px;
+    font-weight: 500;
+
+}
+.nav-logo-img{
+    margin-top: 10px;
+}
+.site-name{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.nav-btn{
+    background-color: #FEA301;
+    border: 0;
+    padding: 10px 60px;
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 12px;
+}
+/* banner section */
+.banner{
+    justify-content: space-between;
+}
+.banner-content{
+    width: 51%;
+    padding-top: 100px;
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 61px;
+    margin-bottom: 25px;
+}
+.banner-details{
+    font-size: 1.25rem;
+}
