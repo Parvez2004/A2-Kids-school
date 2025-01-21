@@ -103,3 +103,49 @@ button:hover{
 .banner-details{
     font-size: 1.25rem;
 }
+.banner-img img{
+    width: 100%;
+}
+
+/* Responcive mobile devices */
+@media screen and (max-width:576px){
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
+    .banner-content{
+        width: 100%;
+        padding: 0;
+    }
+    .banner-title{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .site-name, .link,.navbar-button{
+        display: none;
+    }
+    .banner-details{
+        font-size: 1rem;
+    }
+    .navbar{
+        border-bottom: 1px solid #FEA301;
+        max-width: 500px;
+    }
+    .menu-icon> div{
+        width: 40px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    .navbar .nav-logo{
+        justify-content: space-between;
+        align-items: center;
+        gap: 210px;
+        margin: 10px 20px;
+    }
+    .menu-icon>div{
+        margin-left:auto ;
+    }
+
+}
