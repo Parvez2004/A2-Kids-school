@@ -15,7 +15,7 @@
   }
 
 /* shared style */
-*{
+body{
     background-color: #f7f7f7;
 }
 .sky-blue{
@@ -30,8 +30,14 @@
 .aqua{
     color:#05D4DF;
 }
+.bg-blue-violet{
+    background-color: #5D58EF !important;
+}
 .blue-violet{
     color: #5D58EF;
+}
+.bg-green-gray{
+    background-color: #95B226 !important;
 }
 .display-flex{
     display: flex;
@@ -50,6 +56,12 @@ button:hover{
     border: 1px solid black;
     cursor: pointer;
     color: black;
+}
+.section-title{
+    font-size: 2.8rem;
+}
+.text-center{
+    text-align: center;
 }
 /* header/navbar relative styles */
 #header{
@@ -106,7 +118,179 @@ button:hover{
 .banner-img img{
     width: 100%;
 }
+/* Carriculam Section Start */
+#carriculam{
+    padding: 50px;
+    max-width: 1160px;
+    margin: 0 auto;
+    background-image: url(../assets/bg.png);
+    text-align: center;
+}
+.carriculam-card{
+    margin-top: 50px;
+    justify-content: space-between;
+    gap: 28px;
+    
+}
+.carriculam-card .card{
+    width: 33%;
+    padding: 40px;
+    text-align: center;
+    border-radius: 18px;
+    
+}
+.section-title{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.carriculam-card .card-1{
+    background: linear-gradient(180deg,rgba(222, 245, 255, 1),rgba(255, 255, 255, 1)80%);
+}
+.carriculam-card .card-2{
+    background: linear-gradient(180deg,rgba(255, 244, 220, 1),rgba(255, 255, 255, 1)80%);
+}
+.card-2 .read-btn{
+    color: #F0AA00;
+}
+.carriculam-card .card-3{
+    background: linear-gradient(180deg,#F2E8FF ,rgba(255, 255, 255, 1)80%);
+}
+.card-3 .read-btn{
+    color: #8700FF;
+}
+.carriculam-card .card img{
+    margin-top: 10px;
+}
+.card-title{
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+.card-details{
+    color: rgba(128, 128, 128, 1);
+    font-weight: 500;
+    font-family: "Raleway", serif;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+}
+.read-btn{
+    font-size: 16px;
+    cursor: pointer;
+    color: #64C8FF;
+    font-weight: bold;
+}
+.card-direction{
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+.card-direction .previous,.next{
+    background-color: #FEA301;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: white;
+}
+.card-direction .fa-solid{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.card-direction .previous:hover,.next:hover{
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: White;
+    color: black;
+    
+}
+/* opur-story section */
+#our-stories{
+    max-width: 100%;
+    background: linear-gradient(360deg,rgba(254, 163, 1, .3),rgba(255, 255, 255, .3)), url(../assets/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    
+}
+.our-story-bg{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 60px;
+}
+.kid-stories{
+    display: flex;
+    gap: 20px;
+}
+.kids-stories-left{
+    width: 45%;
+    border-radius: 16px;
+    background-color: white;
+    margin-top: 60px;
 
+}
+.kids-stories-right{
+    width: 60%;
+    border-radius: 16px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.right-kids{
+    background-color: white;
+    border-radius: 16px;
+}
+.kids-stories-img{
+    position: relative;
+}
+.img-size img{
+    height: 330px;
+}
+.kids-stories-img img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: block;
+}
+.date{
+    background-color: #3CD8E8;
+    font-family: "Raleway", serif;
+    width: 145px;
+    padding:15px 19px ;
+    border-radius: 10px;
+    margin-top: -30px;
+    margin-left:30px;
+    border: none;
+    border-radius: 47px;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+}
+.kids-content{
+    padding: 0 35px;
+}
+.kids-stories-title{
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.title-size{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.kids-stories-details{
+    font-size: 15px;
+    font-weight: 500;
+    color: #666666;
+    padding-bottom: 30px;
+}
+.our-stories-button{
+    text-align: center;
+    padding-top: 60px;
+}
 /* Responcive mobile devices */
 @media screen and (max-width:576px){
     .banner{
@@ -122,7 +306,7 @@ button:hover{
         font-size: 2rem;
         line-height: 40px;
     }
-    .site-name, .link,.navbar-button{
+    .site-name, .link,.navbar-button,.card-direction,.kids-stories-left{
         display: none;
     }
     .banner-details{
@@ -138,14 +322,41 @@ button:hover{
         background-color: black;
         margin: 6px 0;
     }
-    .navbar .nav-logo{
+  .nav-logo{
+        width: 100%;
         justify-content: space-between;
         align-items: center;
-        gap: 210px;
-        margin: 10px 20px;
+        margin: 15px 10px;
     }
-    .menu-icon>div{
-        margin-left:auto ;
+    
+    .section-title{
+        font-size: 1.6rem;
+        font-weight: bold;
     }
-
+    .carriculam-card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .carriculam-card .card{
+        width: 100%;
+    }
+    .kid-stories{
+        margin: 0;
+    }
+    .right-kids{
+        width: 100%;
+    }
+    .our-story-bg{
+        padding: 10px 10px;
+    }
+   
+    .date{
+        width: 120px;
+        font-size: 13px;
+        padding: 15px 10px;
+    }
+    .kids-stories-right{
+        width: 100%;
+    }
+ 
 }
