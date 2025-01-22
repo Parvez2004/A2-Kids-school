@@ -352,11 +352,15 @@ button:hover{
    
     .date{
         width: 120px;
+        margin-left: 15px;
         font-size: 13px;
         padding: 15px 10px;
     }
     .kids-stories-right{
         width: 100%;
+    }
+    .kids-content{
+        padding: 0 15px;
     }
  
 }
