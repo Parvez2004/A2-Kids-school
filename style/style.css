@@ -339,8 +339,12 @@ button:hover{
     font-size: 1.25rem;
     color: white;
 }
+.social-icon img{
+    cursor: pointer;
+}
 .social-icon{
     margin-top: -132px;
+
 }
 .social-icon h3{
     font-size: 1.6rem;
